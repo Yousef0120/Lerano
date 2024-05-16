@@ -1,0 +1,152 @@
+.title {
+  text-align: center;
+  color: black;
+  padding: 0px;
+  font-weight: bolder;
+  font-size: 30px;
+}
+
+body {
+  background-color: #f8f8f8;
+}
+
+.sub1,
+.sub2,
+.sub3 {
+  max-width: 1000px;
+  margin: auto;
+  padding: 48px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+.sub1,
+.sub2,
+.sub3,
+.title {
+  margin-bottom: -60px;
+}
+
+.Skills {
+  margin: 10px;
+  padding: 10px;
+  max-width: 100%;
+  cursor: pointer;
+  transition: 0.4s;
+  box-sizing: border-box;
+}
+
+.Skills :hover {
+  background: none;
+  border-radius: 12px;
+  transform: scale(1.1);
+  z-index: 2;
+  color: #108ab1;
+}
+
+.Skills img {
+  width: 275px;
+  height: 275px;
+}
+
+.name {
+  padding: 10px;
+  font-weight: bolder;
+  font-size: 35px;
+  background: none;
+}
+
+.name a {
+  display: inline;
+  height: 30px;
+  width: 30px;
+  transition: 0.4s;
+  background: none;
+  text-decoration: none;
+  color: black;
+  font-size: 33px;
+}
+
+@media screen and (max-width: 600px) {
+  .title {
+    text-align: center;
+    font-size: 35px;
+    padding: 3px 0px;
+    margin-right: -15px;
+  }
+
+  .sub1,
+  .sub2,
+  .sub3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: -41px 69px;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    margin-right: -102px;
+  }
+
+  .Skills {
+    width: 50%;
+    max-width: 450px;
+    padding: 0px;
+    margin: 0px;
+    margin-right: 440px;
+  }
+
+  .name {
+    font-size: 45px;
+    text-align: center;
+    margin-right: -290px;
+  }
+  .Skills img {
+    width: 250px;
+    height: 250px;
+    margin-left: 125px;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1200px) {
+  .title {
+    text-align: center;
+    font-size: 55px;
+    padding: 3px 0px;
+    margin-right: -10px;
+  }
+
+  .sub1,
+  .sub2,
+  .sub3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: -41px 69px;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    margin-right: -102px;
+  }
+
+  .Skills {
+    width: 50%;
+    max-width: 450px;
+    padding: 0px;
+    margin: 0px;
+    margin-right: 440px;
+  }
+
+  .name {
+    font-size: 70px;
+    text-align: center;
+    margin-right: -305px;
+  }
+  .Skills img {
+    width: 550px;
+    height: 455px;
+    margin-left: 105px;
+  }
+}

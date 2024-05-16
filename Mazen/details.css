@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "poppins", sans-serif;
+}
+
+body {
+  background-color: #000;
+  margin: 0;
+  padding: 0;
+  font-family: "poppins", sans-serif;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  height: 106vh;
+  color: #fff;
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.mid {
+  margin: 50px;
+  text-align: center;
+  width: 400px;
+  height: 450px;
+  overflow: hidden;
+}
+
+h1 {
+  text-align: center !important;
+  padding-top: 100px !important;
+  font-size: xx-large !important;
+  margin-top: -50px !important;
+}
+
+h1::after {
+  content: "";
+  background: #108ab1;
+  display: block;
+  height: 2px;
+  width: 150px;
+  margin: 3px auto 50px;
+}
+
+h2 {
+  text-align: center;
+  padding-top: 100px;
+  font-size: xx-large;
+  margin-top: -100px;
+  margin-left: 25px;
+}
+
+h2::after {
+  content: "";
+  background: #108ab1;
+  display: block;
+  height: 2px;
+  width: 180px;
+  margin: 3px auto 50px;
+}
+
+.service .icon {
+  font-size: 30px;
+  margin: 20px auto;
+  padding: 18px;
+  height: 70px;
+  width: 70px;
+  border: 1px solid #108ab1;
+  border-radius: 50%;
+  color: #108ab1;
+  background-image: url("details.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.service ul {
+  font-size: 20px;
+  margin-top: 3px;
+  margin-left: 22px;
+  color: #fff;
+  padding: 20px;
+}
+
+.service span {
+  color: #108ab1;
+  transition: 0.5s;
+}
+
+.service span,
+.service h3 {
+  font-size: 28px;
+}
+
+.service .mid:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), #108ab1);
+  cursor: pointer;
+  color: #000;
+  box-shadow: -5px 5px 10px 0 rgba(0, 0, 0, 0.4);
+  transition: 0.5s;
+}
+
+.service .mid:hover .icon {
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.service .mid:hover ul {
+  color: #fff;
+}
+
+.service .mid:hover span {
+  color: #fff;
+}
+
+@media screen and (max-width: 767px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .mid {
+    width: 100%;
+    margin: 20px 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .mid {
+    width: calc(50% - 20px);
+    margin: 20px;
+  }
+
+  .mid:nth-child(3) {
+    width: 100%;
+    margin: 20px 0;
+  }
+}

@@ -1,0 +1,136 @@
+* {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  padding: 0;
+}
+
+.container {
+  width: 700px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 48px 0;
+  text-align: center;
+  border: 2px solid #ccc;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.container .profile-info {
+  width: 400px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 5px;
+}
+.container .profile-info h3 {
+  margin: 5px 0;
+  font-size: 20px;
+  color: #333;
+}
+
+.container .profile-info img,
+.edit-profile form .flex .inputBox img {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 5px;
+}
+
+.btn {
+  width: auto;
+  border-radius: 5px;
+  margin-top: 20px;
+  padding: 10px 30px;
+  color: #fff;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+  background-color: #3498db;
+}
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.edit-profile {
+  min-height: 100vh;
+  background-color: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.edit-profile form {
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 700px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.edit-profile form .flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.edit-profile form .flex .inputBox {
+  width: 50%;
+}
+
+.edit-profile form .flex .inputBox span {
+  text-align: left;
+  display: block;
+  margin-top: 15px;
+  font-size: 20px;
+  color: #333;
+}
+
+.edit-profile form .flex .inputBox .Box {
+  width: 150%;
+  border-radius: 5px;
+  background-color: #eee;
+  padding: 12px 14px;
+  font-size: 17px;
+  color: #333;
+  margin-top: 10px;
+}
+
+.warning-container .message-container {
+  position: absolute;
+  top: 0;
+  left: 49%;
+  transform: translateX(-50%);
+  width: 50%;
+  text-align: center;
+  padding: 20px;
+  color: #ffffff;
+  z-index: 1000;
+}
+.message {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 4px;
+  text-align: center;
+  color: #fff;
+  background-color: #e74c3c;
+  font-size: 20px;
+}
+
+@media (max-width: 650px) {
+  .edit-profile form .flex {
+    flex-wrap: wrap;
+    gap: 0;
+  }
+  .edit-profile form .flex .inputBox {
+    width: 100%;
+  }
+}
